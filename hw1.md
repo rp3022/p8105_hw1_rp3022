@@ -98,14 +98,14 @@ mean_OR = mean(pull(Hw1Q2_df, OR))
 round(mean_OR, digits=2)
 ```
 
-    ## [1] 0.02
+    ## [1] 0.1
 
 ``` r
 mean_Positive_Association = mean(pull(Hw1Q2_df, Positive_Association))
-round(mean_OR, digits=2)
+round(mean_Positive_Association, digits=2)
 ```
 
-    ## [1] 0.02
+    ## [1] 0.5
 
 ``` r
 mean_Place = mean(pull(Hw1Q2_df, Place))
@@ -121,4 +121,23 @@ mean_Type = mean(pull(Hw1Q2_df, Type))
     ## Warning in mean.default(pull(Hw1Q2_df, Type)): argument is not numeric or
     ## logical: returning NA
 
-### could not calculate mean for the character and factor variable.
+### Could not calculate mean for the character and factor variable.
+
+``` r
+as.numeric(Hw1Q2_df$vec_char)
+as.numeric(Hw1Q2_df$vec_factor)
+as.numeric(Hw1Q2_df$vec_logical)
+```
+
+## as.numeric was able to convert the factor variable and logical variable to numeric variable.
+
+-   For the factor variable, it assigned values 1, 2 and 3 for the 3
+    levels “city”, “continent” and ” country” respectively.
+
+-   For the logical variable it assigned 1 to the True (OR \> 0) and 0
+    to the false vales (OR\<0). The mean of the logical variable was
+    calculated by taking the mean of the “1” and “0” assigned to the
+    true and false logics.
+
+-   as.numeric was unable to convert character variable to numeric
+    variable.
