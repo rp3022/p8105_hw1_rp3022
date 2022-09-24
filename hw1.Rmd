@@ -18,3 +18,26 @@ library(tidyverse)
 data("penguins", package = "palmerpenguins")
 
 ```
+
+## Problem 1
+
+```{r problem_1 }
+a=data.frame(penguins)
+nrow(a)
+ncol(a)
+mean(a$flipper_length_mm, na.rm=TRUE)
+
+
+```
+
+### Description of the 'dataset penguins'
+### The dataset penguins has 344 observations i.e _344 rows_ and 8 variables i.e _8 columns_.The data provides information regarding 344 penguins, and has variables :
+
+* "_species_" which has 3 categories: Adelie, Chinstrap and Gentoo   
+* "_island_" which has 3 categories Togerson, Biscoe and Dream.
+* "_bill length_", "_bill_depth_mm_",  "_flipper_length_mm_" and "_body_mass_g_": They are continuous numerical variables providing information about the length and depth of their bills and the length of their flippers in mm and their body mass in grams
+* "_sex_" dichotomous variable : Male, Female
+* "_year_"
+
+### The mean of flipper length is _200.9152_ mm
+
