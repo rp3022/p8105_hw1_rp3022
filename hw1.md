@@ -1,4 +1,4 @@
-Hw1
+Homework1
 ================
 2022-09-22
 
@@ -18,3 +18,7 @@ library(tidyverse)
     ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
+
+``` r
+data("penguins", package = "palmerpenguins")
+```
