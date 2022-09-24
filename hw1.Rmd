@@ -46,4 +46,14 @@ ggplot(a, aes(x=bill_length_mm, y=flipper_length_mm, color=species))+geom_point(
 ggsave(ggsave ("scatter_a.pdf", height=4, width=6))
 
 ```
+## Problem 2
 
+```{r Problem_2}
+Hw1Q2_df =
+    tibble(
+    OR = rnorm(n=10),
+    Positive_Association = OR > 0,
+    Place = c("NewYork", "Asia", "India", "Europe", "Italy", "Paris", "Canada", "Germany", "London", "Boston"),
+    Type = factor(c("city", "continent", "country", "continent", "country", "city", "country", "country","city", "city"))
+   )
+```

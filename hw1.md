@@ -76,3 +76,15 @@ ggsave(ggsave ("scatter_a.pdf", height=4, width=6))
     ## Saving 7 x 5 in image
 
     ## Warning: Removed 2 rows containing missing values (geom_point).
+
+## Problem 2
+
+``` r
+Hw1Q2_df =
+    tibble(
+    OR = rnorm(n=10),
+    Positive_Association = OR > 0,
+    Place = c("NewYork", "Asia", "India", "Europe", "Italy", "Paris", "Canada", "Germany", "London", "Boston"),
+    Type = factor(c("city", "continent", "country", "continent", "country", "city", "country", "country","city", "city"))
+   )
+```
