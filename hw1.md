@@ -58,3 +58,21 @@ mean(a$flipper_length_mm, na.rm=TRUE)
 -   “*year*”
 
 ### The mean of flipper length is *200.9152* mm
+
+``` r
+ggplot(a, aes(x=bill_length_mm, y=flipper_length_mm, color=species))+geom_point()
+```
+
+    ## Warning: Removed 2 rows containing missing values (geom_point).
+
+![](hw1_files/figure-gfm/creating_plots-1.png)<!-- -->
+
+``` r
+ggsave(ggsave ("scatter_a.pdf", height=4, width=6))
+```
+
+    ## Warning: Removed 2 rows containing missing values (geom_point).
+
+    ## Saving 7 x 5 in image
+
+    ## Warning: Removed 2 rows containing missing values (geom_point).
