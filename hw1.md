@@ -90,3 +90,35 @@ Hw1Q2_df =
     Type = factor(c("city", "continent", "country", "continent", "country", "city", "country", "country","city", "city"))
    )
 ```
+
+### calculating mean for each variable
+
+``` r
+mean_OR = mean(pull(Hw1Q2_df, OR))
+round(mean_OR, digits=2)
+```
+
+    ## [1] 0.02
+
+``` r
+mean_Positive_Association = mean(pull(Hw1Q2_df, Positive_Association))
+round(mean_OR, digits=2)
+```
+
+    ## [1] 0.02
+
+``` r
+mean_Place = mean(pull(Hw1Q2_df, Place))
+```
+
+    ## Warning in mean.default(pull(Hw1Q2_df, Place)): argument is not numeric or
+    ## logical: returning NA
+
+``` r
+mean_Type = mean(pull(Hw1Q2_df, Type))
+```
+
+    ## Warning in mean.default(pull(Hw1Q2_df, Type)): argument is not numeric or
+    ## logical: returning NA
+
+### could not calculate mean for the character and factor variable.
