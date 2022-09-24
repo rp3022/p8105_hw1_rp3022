@@ -41,6 +41,7 @@ mean(a$flipper_length_mm, na.rm=TRUE)
 
 ### The mean of flipper length is _200.9152_ mm
 
+<<<<<<< HEAD
 ```{r creating_plots}
 ggplot(a, aes(x=bill_length_mm, y=flipper_length_mm, color=species))+geom_point()
 ggsave(ggsave ("scatter_a.pdf", height=4, width=6))
